@@ -38,7 +38,7 @@
 				container = document.createElement( 'div' );
 				document.body.appendChild( container );
 
-				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
+				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 20 );
 				camera.position.z = 20;
 
 				// scene
@@ -62,7 +62,7 @@
 
 					} );
 
-					object.position.y = - 95;
+					object.position.y = 0;
 					scene.add( object );
 
 				}
@@ -79,7 +79,7 @@
 
 				var textureLoader = new THREE.TextureLoader( manager );
 
-				var texture = textureLoader.load( 'textures/texture.jpg' );
+				var texture = textureLoader.load( 'textures/texture.png' );
 
 				// model
 
