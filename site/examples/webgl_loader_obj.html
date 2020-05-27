@@ -75,6 +75,12 @@
 
 				};
 
+				// texture
+
+				var textureLoader = new THREE.TextureLoader( manager );
+
+				var texture = textureLoader.load( 'textures/texture.jpg' );
+
 				// model
 
 				function onProgress( xhr ) {
